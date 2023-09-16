@@ -1,0 +1,44 @@
+.banner {
+	background: var(--azul-degrade);
+	color: var(--branco);
+	text-align: center;
+
+	padding: 2em;
+}
+
+.banner__titulo {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.banner__Texto {
+	font-size: 1em;
+	font-weight: 500;
+	margin: 1em 0;
+}
+
+.banner__pesquisa {
+	background-color: transparent;
+	border: 1px solid var(--branco);
+	border-radius: 24px;
+	padding: 1em;
+	width: 100%;
+	color: var(--branco);
+}
+
+/* 
+	Foi definido novamente a familia da fonte pois mesmo aplicando no body 
+	ele aplica para todos os filhos mas os atributos dos filhos não por isso
+	foi aplicado com ::placeholder do imput pesquisa
+*/
+.banner__pesquisa::placeholder {
+	font-family: var(--fonte-principal);
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	color: var(--branco);
+
+	background-image: url("../img/Lupa.svg");
+	background-repeat: no-repeat;
+	background-position: 1em;
+}
